@@ -6,10 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddCoursesComponent } from './add-courses/add-courses.component';
+import { ViewCourseComponent } from './view-course/view-course.component';
 
 const appRoutes:Routes = [
   {
     path:"",component:AddCoursesComponent
+  },
+  {
+    path:"view",component:ViewCourseComponent
   }
 ]
 
@@ -17,7 +21,8 @@ const appRoutes:Routes = [
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddCoursesComponent
+    AddCoursesComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,
